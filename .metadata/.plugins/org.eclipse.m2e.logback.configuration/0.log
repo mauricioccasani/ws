@@ -2288,3 +2288,214 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-04-07 13:25:42,353 [Worker-195: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-04-07 13:25:42,353 [Worker-195: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-04-07 13:25:42,353 [Worker-195: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 14:58:20,075 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-07 14:58:20,361 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-obtener:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\pom.xml.
+2022-04-07 14:58:21,760 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.6.6/spring-boot-starter-actuator-2.6.6.pom
+2022-04-07 14:58:22,062 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.6.6/spring-boot-starter-actuator-2.6.6.pom
+2022-04-07 14:58:22,276 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.6.6/spring-boot-actuator-autoconfigure-2.6.6.pom
+2022-04-07 14:58:22,451 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.6.6/spring-boot-actuator-autoconfigure-2.6.6.pom
+2022-04-07 14:58:22,586 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.6.6/spring-boot-actuator-2.6.6.pom
+2022-04-07 14:58:22,816 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.6.6/spring-boot-actuator-2.6.6.pom
+2022-04-07 14:58:23,149 [AetherRepositoryConnector-repo.maven.apache.org-2-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.6.6/spring-boot-starter-actuator-2.6.6.jar
+2022-04-07 14:58:23,426 [AetherRepositoryConnector-repo.maven.apache.org-2-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.6.6/spring-boot-actuator-2.6.6.jar
+2022-04-07 14:58:23,962 [AetherRepositoryConnector-repo.maven.apache.org-2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.6.6/spring-boot-actuator-autoconfigure-2.6.6.jar
+2022-04-07 14:58:25,399 [AetherRepositoryConnector-repo.maven.apache.org-2-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.6.6/spring-boot-starter-actuator-2.6.6.jar
+2022-04-07 14:58:27,119 [AetherRepositoryConnector-repo.maven.apache.org-2-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.6.6/spring-boot-actuator-2.6.6.jar
+2022-04-07 14:58:27,266 [AetherRepositoryConnector-repo.maven.apache.org-2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.6.6/spring-boot-actuator-autoconfigure-2.6.6.jar
+2022-04-07 14:58:28,350 [Worker-193: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-obtener/src/main/java
+2022-04-07 14:58:28,351 [Worker-193: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-obtener/src/main/resources
+2022-04-07 14:58:28,351 [Worker-193: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-obtener/src/main/resources
+2022-04-07 14:58:28,352 [Worker-193: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-obtener/src/test/java
+2022-04-07 14:58:30,271 [Worker-193: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 10 sec
+2022-04-07 14:58:30,356 [Worker-207: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.6.6/spring-boot-starter-actuator-2.6.6-sources.jar
+2022-04-07 14:58:30,673 [Worker-207: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.6.6/spring-boot-starter-actuator-2.6.6-sources.jar
+2022-04-07 14:58:30,791 [Worker-207: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-actuator:2.6.6
+2022-04-07 14:58:31,627 [Worker-207: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.6.6/spring-boot-actuator-autoconfigure-2.6.6-sources.jar
+2022-04-07 14:58:32,353 [Worker-207: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.6.6/spring-boot-actuator-autoconfigure-2.6.6-sources.jar
+2022-04-07 14:58:32,397 [Worker-207: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator-autoconfigure:2.6.6
+2022-04-07 14:58:33,370 [Worker-207: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.6.6/spring-boot-actuator-2.6.6-sources.jar
+2022-04-07 14:58:36,338 [Worker-207: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.6.6/spring-boot-actuator-2.6.6-sources.jar
+2022-04-07 14:58:36,383 [Worker-207: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator:2.6.6
+2022-04-07 14:58:44,755 [Worker-211: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 14:58:44,755 [Worker-211: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 14:58:44,756 [Worker-211: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 14:58:44,759 [Worker-211: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 14:58:44,761 [Worker-211: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 14:58:44,761 [Worker-211: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 14:58:44,761 [Worker-211: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 15:10:12,056 [Worker-210: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 15:10:12,057 [Worker-210: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 15:10:12,057 [Worker-210: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 15:10:12,061 [Worker-210: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 15:10:12,062 [Worker-210: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 15:10:12,062 [Worker-210: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 15:10:12,062 [Worker-210: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 16:05:08,951 [Worker-218: Cleaning selected projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-obtener:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\pom.xml.
+2022-04-07 16:05:10,852 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:05:10,852 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:05:10,852 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:05:10,855 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 16:05:10,857 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:05:10,857 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:05:10,857 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 16:05:12,242 [Worker-224: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-bootstrap/3.1.1/spring-cloud-starter-bootstrap-3.1.1-sources.jar
+2022-04-07 16:05:12,639 [Worker-224: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-bootstrap/3.1.1/spring-cloud-starter-bootstrap-3.1.1-sources.jar
+2022-04-07 16:05:12,697 [Worker-224: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.cloud:spring-cloud-starter-bootstrap:3.1.1
+2022-04-07 16:05:21,383 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:05:21,384 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:05:21,384 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:05:21,387 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 16:05:21,389 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:05:21,389 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:05:21,389 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-config-server\src\test\resources
+2022-04-07 16:05:21,594 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:05:21,594 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:05:21,595 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:05:21,598 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 16:05:21,599 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:05:21,599 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:05:21,600 [Worker-223: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 16:11:46,259 [Worker-226: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-07 16:11:46,502 [Worker-226: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-insertar:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\pom.xml.
+2022-04-07 16:11:46,921 [Worker-226: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/main/java
+2022-04-07 16:11:46,922 [Worker-226: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 16:11:46,923 [Worker-226: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 16:11:46,923 [Worker-226: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/test/java
+2022-04-07 16:11:47,299 [Worker-226: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-04-07 16:12:06,569 [Worker-227: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:12:06,570 [Worker-227: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:12:06,570 [Worker-227: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:12:06,573 [Worker-227: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:12:06,579 [Worker-227: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:12:06,580 [Worker-227: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:12:06,580 [Worker-227: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 16:19:23,984 [Worker-234: Cleaning selected projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-obtener:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\pom.xml.
+2022-04-07 16:19:24,544 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:19:24,544 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:19:24,544 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:19:24,549 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 16:19:24,550 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:19:24,550 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:19:24,551 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 16:19:24,976 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:19:24,976 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:19:24,977 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:19:24,980 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 16:19:24,981 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:19:24,981 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:19:24,981 [Worker-233: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 16:19:32,381 [Worker-229: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-07 16:19:32,735 [Worker-229: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-insertar:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\pom.xml.
+2022-04-07 16:19:32,855 [Worker-229: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-obtener:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\pom.xml.
+2022-04-07 16:19:32,939 [Worker-229: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-config-server:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-config-server\pom.xml.
+2022-04-07 16:19:33,700 [Worker-229: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-obtener/src/main/java
+2022-04-07 16:19:33,701 [Worker-229: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-obtener/src/main/resources
+2022-04-07 16:19:33,701 [Worker-229: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-obtener/src/main/resources
+2022-04-07 16:19:33,701 [Worker-229: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-obtener/src/test/java
+2022-04-07 16:19:34,193 [Worker-229: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-04-07 16:19:48,038 [Worker-233: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:19:48,038 [Worker-233: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:19:48,038 [Worker-233: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 16:19:48,051 [Worker-233: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 16:19:48,053 [Worker-233: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 16:19:48,053 [Worker-233: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 16:19:48,053 [Worker-233: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 17:18:54,975 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:18:54,976 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:18:54,976 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:18:54,980 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 17:18:54,981 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:18:54,982 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:18:54,982 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-config-server\src\test\resources
+2022-04-07 17:18:55,124 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:18:55,125 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:18:55,125 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:18:55,128 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:18:55,135 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:18:55,135 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:18:55,135 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 17:18:55,350 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:18:55,350 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:18:55,351 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:18:55,353 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 17:18:55,354 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:18:55,355 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:18:55,355 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 17:19:34,370 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:19:34,370 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:19:34,371 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:19:34,376 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 17:19:34,377 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:19:34,377 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:19:34,377 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 17:19:56,822 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:19:56,822 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:19:56,822 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 17:19:56,823 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:19:56,857 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:19:56,857 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:19:56,857 [Worker-229: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 17:21:07,346 [Worker-240: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-07 17:21:07,540 [Worker-240: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-insertar:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\pom.xml.
+2022-04-07 17:21:08,017 [Worker-240: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/main/java
+2022-04-07 17:21:08,017 [Worker-240: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 17:21:08,017 [Worker-240: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 17:21:08,018 [Worker-240: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/test/java
+2022-04-07 17:21:08,443 [Worker-240: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-04-07 17:21:55,088 [Worker-229: Cleaning selected projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-insertar:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\pom.xml.
+2022-04-07 17:21:56,324 [Worker-239: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:21:56,325 [Worker-239: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:21:56,325 [Worker-239: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:21:56,340 [Worker-239: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:21:56,348 [Worker-239: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:21:56,349 [Worker-239: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:21:56,349 [Worker-239: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 17:29:29,027 [Worker-250: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-07 17:29:29,349 [Worker-250: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-insertar:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\pom.xml.
+2022-04-07 17:29:29,524 [Worker-250: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-obtener:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\pom.xml.
+2022-04-07 17:29:29,569 [Worker-250: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-config-server:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-config-server\pom.xml.
+2022-04-07 17:29:30,462 [Worker-250: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/main/java
+2022-04-07 17:29:30,463 [Worker-250: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 17:29:30,463 [Worker-250: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 17:29:30,463 [Worker-250: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/test/java
+2022-04-07 17:29:31,227 [Worker-250: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-04-07 17:29:37,829 [Worker-243: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:29:37,829 [Worker-243: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:29:37,829 [Worker-243: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:29:37,840 [Worker-243: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:29:37,847 [Worker-243: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:29:37,847 [Worker-243: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:29:37,847 [Worker-243: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 17:31:23,389 [Worker-249: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:31:23,389 [Worker-249: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:31:23,389 [Worker-249: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:31:23,396 [Worker-249: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 17:31:23,396 [Worker-249: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:31:23,396 [Worker-249: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:31:23,396 [Worker-249: Launching ws-insertar - WsInsertarApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\src\test\resources
+2022-04-07 17:34:03,237 [Worker-253: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-07 17:34:03,524 [Worker-253: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-insertar:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\pom.xml.
+2022-04-07 17:34:04,187 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/main/java
+2022-04-07 17:34:04,188 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 17:34:04,188 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-insertar/src/main/resources
+2022-04-07 17:34:04,188 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-insertar/src/test/java
+2022-04-07 17:34:04,547 [Worker-253: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-04-07 17:34:48,296 [Worker-253: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-07 17:34:48,447 [Worker-253: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-obtener:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\pom.xml.
+2022-04-07 17:34:48,874 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-obtener/src/main/java
+2022-04-07 17:34:48,874 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-obtener/src/main/resources
+2022-04-07 17:34:48,875 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ws-obtener/src/main/resources
+2022-04-07 17:34:48,875 [Worker-253: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ws-obtener/src/test/java
+2022-04-07 17:34:49,244 [Worker-253: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-04-07 17:37:02,702 [Worker-250: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:37:02,703 [Worker-250: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:37:02,703 [Worker-250: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-07 17:37:02,714 [Worker-250: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 17:37:02,716 [Worker-250: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:37:02,716 [Worker-250: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:37:02,716 [Worker-250: Launching ws-obtener - WsObtenerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-obtener\src\test\resources
+2022-04-07 17:43:40,991 [Worker-249: Launching ws-config-server - WsConfigServerApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pe.com.mau:ws-config-server:1.0.0 @ C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-config-server\pom.xml.
+2022-04-07 17:43:41,448 [Worker-249: Launching ws-config-server - WsConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-07 17:43:41,448 [Worker-249: Launching ws-config-server - WsConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-07 17:43:41,449 [Worker-249: Launching ws-config-server - WsConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-07 17:43:41,450 [Worker-249: Launching ws-config-server - WsConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

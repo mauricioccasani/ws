@@ -1,223 +1,156 @@
-2022-04-04 08:46:10.643  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 14136 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
-2022-04-04 08:46:10.694  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
-2022-04-04 08:46:11.223  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-04 08:46:11.310  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
-2022-04-04 08:46:11.699  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
-2022-04-04 08:46:11.707  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
-2022-04-04 08:46:11.708  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
-2022-04-04 08:46:11.708  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-04 08:46:11.802  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
-2022-04-04 08:46:11.803  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 1055 ms
-2022-04-04 08:46:11.927  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-04 08:46:11.962  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-04-04 08:46:12.074  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-04-04 08:46:12.150  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
-2022-04-04 08:46:12.328  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
-2022-04-04 08:46:12.342  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-04-04 08:46:12.812  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-04 08:46:12.821  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-04 08:46:13.064  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-04-04 08:46:13.400  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
-2022-04-04 08:46:13.421  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
-2022-04-04 08:46:13.431  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 3.095 seconds (JVM running for 4.016)
-2022-04-04 08:46:13.439  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-12345 URL para obtener productos: 
-2022-04-04 08:46:13.440  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-12345 Tipo: GET
-2022-04-04 08:46:13.442  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-12345 Timeout conexion (ms): 2
-2022-04-04 08:46:13.442  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-12345 Timeout ejecucion (ms): 5
-2022-04-04 08:46:13.489  -[ERROR]-[p.c.mau.app.client.ProductoClienImpl@obtener.75]-12345 Error en modificar orden: I/O error on GET request for "http://localhost:8080/api/productos": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
-org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/api/productos": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+2022-04-07 16:12:08.610  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 13144 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-07 16:12:08.659  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-07 16:12:09.344  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-07 16:12:09.387  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2022-04-07 16:12:09.817  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
+2022-04-07 16:12:09.827  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-07 16:12:09.827  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-07 16:12:09.827  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-07 16:12:09.924  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-07 16:12:09.924  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 1218 ms
+2022-04-07 16:12:10.114  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
+2022-04-07 16:12:10.315  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
+2022-04-07 16:12:10.370  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-07 16:12:10.416  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-07 16:12:10.558  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-07 16:12:10.674  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-07 16:12:11.120  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-07 16:12:11.130  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-07 16:12:11.458  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-07 16:12:11.902  -[INFO ]-[o.s.b.a.e.web.EndpointLinksResolver@<init>.58]-Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 16:12:11.924  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
+2022-04-07 16:12:11.942  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-07 16:12:11.954  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 3.651 seconds (JVM running for 4.551)
+2022-04-07 16:12:13.560  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-07 16:12:13.561  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
+2022-04-07 16:12:13.563  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 1 ms
+2022-04-07 16:13:07.667  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
+2022-04-07 16:13:07.667  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
+2022-04-07 16:13:07.669  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
+2022-04-07 16:13:07.670  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
+2022-04-07 16:13:07.697  -[ERROR]-[p.c.mau.app.client.ProductoClienImpl@obtener.75]-123456789 Error en modificar orden: I/O error on GET request for "http://localhost:8080/api/productos": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/api/productos": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
 	at pe.com.mau.app.client.ProductoClienImpl.obtener(ProductoClienImpl.java:60)
-	at pe.com.mau.app.WsInsertarApplication.run(WsInsertarApplication.java:21)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at pe.com.mau.app.WsInsertarApplication.main(WsInsertarApplication.java:16)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
-	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
-	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
-	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:292)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:754)
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1615)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:82)
+	at pe.com.mau.app.service.ProductoServiceImpl.obtenerProductosExt(ProductoServiceImpl.java:29)
+	at pe.com.mau.app.controller.ProductoRest.listarPorductos(ProductoRest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1253)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1015)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
-	... 10 common frames omitted
-2022-04-04 08:46:13.489  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-12345 Datos de Salida:
+	... 59 common frames omitted
+2022-04-07 16:13:07.697  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
  null
-2022-04-04 08:46:13.490  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-12345 Tiempo invocacion: 57 milisegundos
-2022-04-04 08:48:55.917  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-04 08:48:55.919  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
-2022-04-04 08:48:55.919  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 0 ms
-2022-04-04 08:48:55.947  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 08:48:55.947  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 08:48:55.947  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 08:48:55.947  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 08:48:55.967  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 08:48:56.046  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 08:48:56.047  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 100 milisegundos
-2022-04-04 08:50:39.120  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
-2022-04-04 08:50:39.303  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-04-04 08:50:39.304  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
-2022-04-04 08:50:39.313  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
-2022-04-04 08:50:51.221  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 22996 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
-2022-04-04 08:50:51.229  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
-2022-04-04 08:50:51.779  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-04 08:50:51.827  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
-2022-04-04 08:50:52.281  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
-2022-04-04 08:50:52.291  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
-2022-04-04 08:50:52.292  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
-2022-04-04 08:50:52.292  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-04 08:50:52.406  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
-2022-04-04 08:50:52.407  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 1143 ms
-2022-04-04 08:50:52.553  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-04 08:50:52.600  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-04-04 08:50:52.738  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-04-04 08:50:52.834  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
-2022-04-04 08:50:53.032  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
-2022-04-04 08:50:53.051  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-04-04 08:50:53.585  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-04 08:50:53.592  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-04 08:50:53.905  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-04-04 08:50:54.216  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
-2022-04-04 08:50:54.243  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
-2022-04-04 08:50:54.252  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 3.394 seconds (JVM running for 4.712)
-2022-04-04 08:51:15.756  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-12345 URL para obtener productos: 
-2022-04-04 08:51:16.462  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-12345 Tipo: GET
-2022-04-04 08:51:20.963  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-12345 Timeout conexion (ms): 2
-2022-04-04 08:51:21.959  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-12345 Timeout ejecucion (ms): 5
-2022-04-04 08:51:32.513  -[ERROR]-[p.c.mau.app.client.ProductoClienImpl@obtener.75]-12345 Error en modificar orden: I/O error on GET request for "http://localhost:8080/api/productos": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
-org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/api/productos": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
-	at pe.com.mau.app.client.ProductoClienImpl.obtener(ProductoClienImpl.java:60)
-	at pe.com.mau.app.WsInsertarApplication.run(WsInsertarApplication.java:21)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at pe.com.mau.app.WsInsertarApplication.main(WsInsertarApplication.java:16)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
-	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
-	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
-	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:292)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:754)
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1615)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:82)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
-	... 10 common frames omitted
-2022-04-04 08:51:34.479  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-12345 Datos de Salida:
- null
-2022-04-04 08:51:36.952  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-12345 Tiempo invocacion: 41092 milisegundos
-2022-04-04 08:52:12.582  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-04 08:52:12.583  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
-2022-04-04 08:52:12.583  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 0 ms
-2022-04-04 08:52:22.135  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 08:52:22.136  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 08:52:22.136  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 08:52:22.137  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 08:52:22.166  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 08:52:22.239  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 08:52:22.239  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 9627 milisegundos
-2022-04-04 08:52:31.238  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 08:52:31.238  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 08:52:31.238  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 08:52:31.239  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 08:52:31.251  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 08:52:31.253  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 08:52:31.253  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 15 milisegundos
-2022-04-04 08:52:33.667  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 08:52:33.668  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 08:52:33.668  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 08:52:33.669  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 08:52:33.682  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 08:52:33.684  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 08:52:33.685  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 18 milisegundos
-2022-04-04 08:53:33.726  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 08:53:33.727  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 08:53:33.727  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 08:53:33.727  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 08:53:33.748  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 08:53:33.752  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 08:53:33.753  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 27 milisegundos
-2022-04-04 08:54:07.767  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 08:54:07.774  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 08:54:07.778  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 08:54:07.781  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 08:54:07.915  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 08:54:07.956  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 08:54:07.961  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 195 milisegundos
-2022-04-04 08:54:56.944  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
-2022-04-04 08:54:57.126  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-04-04 08:54:57.129  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
-2022-04-04 08:54:57.139  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
-2022-04-04 08:55:05.043  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 24836 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
-2022-04-04 08:55:05.048  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
-2022-04-04 08:55:05.596  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-04 08:55:05.651  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
-2022-04-04 08:55:06.092  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
-2022-04-04 08:55:06.102  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
-2022-04-04 08:55:06.102  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
-2022-04-04 08:55:06.102  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-04 08:55:06.188  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
-2022-04-04 08:55:06.188  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 1094 ms
-2022-04-04 08:55:06.313  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
-2022-04-04 08:55:06.499  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
-2022-04-04 08:55:06.543  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-04 08:55:06.591  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-04-04 08:55:06.755  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-04-04 08:55:06.884  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-04-04 08:55:07.357  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-04 08:55:07.365  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-04 08:55:07.707  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-04-04 08:55:08.028  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
-2022-04-04 08:55:08.059  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
-2022-04-04 08:55:08.073  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 3.374 seconds (JVM running for 4.583)
-2022-04-04 09:06:17.836  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-04 09:06:17.837  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
-2022-04-04 09:06:17.838  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 1 ms
-2022-04-04 09:06:24.137  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 09:06:24.157  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 09:06:24.240  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 09:06:24.244  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 09:06:25.967  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 09:06:28.317  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 09:06:28.321  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 4327 milisegundos
-2022-04-04 09:06:54.531  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
-2022-04-04 09:06:54.542  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
-2022-04-04 09:06:54.547  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
-2022-04-04 09:06:54.551  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
-2022-04-04 09:06:54.678  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
-2022-04-04 09:06:54.713  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
- {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
-2022-04-04 09:06:54.718  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 189 milisegundos
+2022-04-07 16:13:07.697  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 32 milisegundos
+2022-04-07 17:00:14.226  -[WARN ]-[com.zaxxer.hikari.pool.HikariPool@run.788]-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s69ms49µs400ns).
+2022-04-07 17:18:43.997  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
+2022-04-07 17:18:44.155  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-07 17:18:44.157  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
+2022-04-07 17:18:44.164  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
+2022-04-07 17:19:36.652  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 20104 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-07 17:19:36.655  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-07 17:19:37.421  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-07 17:19:37.468  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2022-04-07 17:19:37.883  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8080 (http)
+2022-04-07 17:19:37.891  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-07 17:19:37.891  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-07 17:19:37.891  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-07 17:19:37.987  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-07 17:19:37.987  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 1299 ms
+2022-04-07 17:19:38.117  -[WARN ]-[o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext@refresh.591]-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-07 17:19:38.120  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Stopping service [Tomcat]
+2022-04-07 17:19:38.137  -[INFO ]-[o.s.b.a.l.ConditionEvaluationReportLoggingListener@logMessage.136]-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-07 17:19:38.151  -[ERROR]-[o.s.b.d.LoggingFailureAnalysisReporter@report.40]-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
