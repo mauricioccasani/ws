@@ -1,0 +1,32 @@
+package pe.com.mau.app;
+
+import java.util.List;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import lombok.extern.log4j.Log4j2;
+import pe.com.mau.app.bean.response.ProductoBean;
+import pe.com.mau.app.bean.response.ProductoResponse;
+import pe.com.mau.app.client.ProductoClienInf;
+
+@SpringBootApplication
+@Log4j2
+public class WsInsertarApplication implements CommandLineRunner {
+	private ProductoClienInf inf;
+
+	public static void main(String[] args) {
+		SpringApplication.run(WsInsertarApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		ProductoResponse response= this.inf.obtener("123456789");
+	
+		for (ProductoBean bean : response.getProductos()) {
+			log.info("Datos: {}",bean);
+		}
+	}
+
+}

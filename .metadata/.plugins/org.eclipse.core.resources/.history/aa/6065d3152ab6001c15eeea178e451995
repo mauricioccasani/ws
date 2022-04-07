@@ -1,0 +1,12 @@
+package pe.com.mau.app.bean.response;
+
+import org.apache.logging.log4j.message.Message;
+
+import lombok.Data;
+
+@Data
+public class ProductResponse {
+	private Message mensaje;
+	private ProductResponse data;
+	
+}

@@ -1,0 +1,77 @@
+package pe.com.mau.app.client;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.extern.log4j.Log4j2;
+import pe.com.mau.app.bean.response.ProductoResponse;
+import pe.com.mau.app.util.PropertiesExterno;
+
+@Service
+@Log4j2
+public class ProductoClienImpl implements ProductoClienInf {
+	@Autowired
+	private PropertiesExterno propExt;
+
+	@Override
+	public ProductoResponse obtener() {
+		long tiempoInicio = System.currentTimeMillis();
+		ProductoResponse response =new ProductoResponse(); 
+		ObjectMapper objectMapper = new ObjectMapper();
+		String responseJson = null;
+
+		String url = propertiesExterno.wsConmotprom;
+		Integer timeoutConexion= propertiesExterno.wsConmotpromConnectionTimeout;
+		Integer timeoutEjecucion = propertiesExterno.wsConmotpromRequestTimeout;
+
+		try {
+
+			HttpHeaders httpHeaders = new HttpHeaders();
+			httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+	
+			String requestJson = ClaroUtil.printPrettyJSONString(conMotpromrRequest);
+
+			logger.info(trazabilidad + "URL para modificar orden motor de pagos: " + url);
+			logger.info(trazabilidad + "Tipo: " + HttpMethod.POST);
+			
+			logger.info(trazabilidad + "Datos de Entrada:\n" + requestJson);
+			
+			HttpEntity<String> httpEntity = new HttpEntity<>(requestJson, httpHeaders);
+
+			SimpleClientHttpRequestFactory httpRequestFactory = new SimpleClientHttpRequestFactory();
+			httpRequestFactory.setConnectTimeout(timeoutConexion);
+			httpRequestFactory.setReadTimeout(timeoutEjecucion);
+
+			logger.info(trazabilidad + "Timeout conexion (ms): " + timeoutConexion);
+			logger.info(trazabilidad + "Timeout ejecucion (ms): " + timeoutEjecucion);
+
+
+			RestTemplate restTemplate = new RestTemplate(httpRequestFactory);
+			ResponseEntity<String> responseEntity = restTemplate.exchange(
+					url, HttpMethod.POST, httpEntity, String.class);
+
+			logger.info(trazabilidad + "Servicio REST ejecutado");
+
+			responseJson = responseEntity.getBody();
+			response = objectMapper.readValue(responseJson, ConMotpromrResponse.class);
+
+		}catch (HttpClientErrorException e) {
+			e.printStackTrace();
+		
+			logger.error(trazabilidad + "Codigo Error Modificar  Orden :"+ e.getStatusCode());
+			logger.error(trazabilidad + "Mensaje Error Modificar Orden :"+ e.getResponseBodyAsString());
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.error(trazabilidad + "Error en modificar orden: " + e.getMessage(), e);
+
+		} finally {
+			logger.info(trazabilidad + "Datos de Salida:\n " + responseJson);
+			logger.info(trazabilidad + "Tiempo invocacion: " + (System.currentTimeMillis() - tiempoInicio)
+					+ " milisegundos");
+		}
+
+		return response;
+	}
+}

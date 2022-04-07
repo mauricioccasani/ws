@@ -1,0 +1,19 @@
+package pe.com.mau.app.bean;
+
+import java.time.LocalDate;
+
+import lombok.Data;
+
+@Entity
+@Table(name = "productos")
+@Data
+public class ProductoEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String nombre;
+	private int cantidad;
+	private double precio;
+	private String estado;
+	private LocalDate fecha;
+}

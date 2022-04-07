@@ -1,0 +1,11 @@
+package pe.com.mau.app.bean.response;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import pe.com.mau.app.bean.ProductoEntity;
+
+@Data
+@EqualsAndHashCode(callSuper=false)
+public class ProductoResponse extends GenericResponse{
+	private ProductoEntity productoBean;
+}

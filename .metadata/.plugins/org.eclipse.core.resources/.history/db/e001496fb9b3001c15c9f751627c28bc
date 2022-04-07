@@ -1,0 +1,36 @@
+package pe.com.mau.app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import pe.com.mau.app.bean.ProductoEntity;
+import pe.com.mau.app.bean.response.GenericResponse;
+import pe.com.mau.app.bean.response.ProductoResponse;
+import pe.com.mau.app.client.ProductoClienInf;
+import pe.com.mau.app.dao.ProductoDao;
+import pe.com.mau.app.util.Constante;
+@Service
+public class ProductoServiceImpl  implements ProductoServiceInf{
+	@Autowired
+	private ProductoDao productoDao;
+	@Autowired
+	private ProductoClienInf productoClien;
+
+	@Override
+	public GenericResponse obtener(ProductoEntity request) { 
+		GenericResponse response=new GenericResponse();
+		ProductoResponse productoResponse= this.productoClien.obtener("123456789");
+		if (productoResponse.equals(Constante.MSG_EXITO)) {
+			
+		}
+		
+		this.productoDao.save(request);
+		response.setCodRespuesta(Constante.COD_EXITO);
+		response.setMsgRespuesta(Constante.COD_EXITO);
+		return response;
+	}
+
+	
+
+
+}

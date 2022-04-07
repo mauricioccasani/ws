@@ -1,0 +1,270 @@
+2022-04-03 20:58:52.295  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 18292 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-03 20:58:52.297  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-03 20:58:52.725  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-03 20:58:52.773  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2022-04-03 20:58:53.144  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
+2022-04-03 20:58:53.151  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-03 20:58:53.152  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-03 20:58:53.152  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-03 20:58:53.233  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-03 20:58:53.233  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 904 ms
+2022-04-03 20:58:53.354  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-03 20:58:53.386  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-03 20:58:53.499  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-03 20:58:53.567  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
+2022-04-03 20:58:53.739  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
+2022-04-03 20:58:53.753  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-03 20:58:53.919  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-03 20:58:53.926  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 20:58:54.058  -[WARN ]-[o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext@refresh.591]-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productoServiceImpl': Unsatisfied dependency expressed through field 'productoDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productoDao' defined in pe.com.mau.app.dao.ProductoDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class pe.com.mau.app.bean.ProductoEntity
+2022-04-03 20:58:54.058  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 20:58:54.060  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
+2022-04-03 20:58:54.220  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
+2022-04-03 20:58:54.221  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Stopping service [Tomcat]
+2022-04-03 20:58:54.229  -[INFO ]-[o.s.b.a.l.ConditionEvaluationReportLoggingListener@logMessage.136]-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-03 20:58:54.244  -[ERROR]-[o.s.boot.SpringApplication@reportFailure.830]-Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productoServiceImpl': Unsatisfied dependency expressed through field 'productoDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productoDao' defined in pe.com.mau.app.dao.ProductoDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class pe.com.mau.app.bean.ProductoEntity
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at pe.com.mau.app.WsInsertarApplication.main(WsInsertarApplication.java:16)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productoDao' defined in pe.com.mau.app.dao.ProductoDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class pe.com.mau.app.bean.ProductoEntity
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class pe.com.mau.app.bean.ProductoEntity
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:232)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:181)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:164)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:75)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 30 common frames omitted
+2022-04-03 21:01:20.468  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 2636 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-03 21:01:20.471  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-03 21:01:20.899  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-03 21:01:20.937  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2022-04-03 21:01:21.295  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
+2022-04-03 21:01:21.303  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:01:21.303  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-03 21:01:21.304  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-03 21:01:21.384  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-03 21:01:21.384  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 883 ms
+2022-04-03 21:01:21.509  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-03 21:01:21.543  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-03 21:01:21.656  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-03 21:01:21.725  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
+2022-04-03 21:01:21.996  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
+2022-04-03 21:01:22.010  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-03 21:01:22.422  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-03 21:01:22.428  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:01:22.652  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-03 21:01:22.918  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:01:22.934  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-03 21:01:22.941  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 2.768 seconds (JVM running for 3.435)
+2022-04-03 21:01:22.946  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-12345 URL para obtener productos: 
+2022-04-03 21:01:22.946  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-12345 Tipo: GET
+2022-04-03 21:01:22.947  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-12345 Timeout conexion (ms): 2
+2022-04-03 21:01:22.947  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-12345 Timeout ejecucion (ms): 5
+2022-04-03 21:01:22.982  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-12345 Servicio REST ejecutado
+2022-04-03 21:01:23.024  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-12345 Datos de Salida:
+ {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
+2022-04-03 21:01:23.024  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-12345 Tiempo invocacion: 82 milisegundos
+2022-04-03 21:32:32.575  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
+2022-04-03 21:32:32.707  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:32:32.709  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
+2022-04-03 21:32:32.716  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
+2022-04-03 21:32:38.975  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 22980 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-03 21:32:38.977  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-03 21:32:39.463  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-03 21:32:39.502  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2022-04-03 21:32:39.863  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
+2022-04-03 21:32:39.871  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:32:39.872  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-03 21:32:39.872  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-03 21:32:39.964  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-03 21:32:39.965  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 958 ms
+2022-04-03 21:32:40.087  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-03 21:32:40.121  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-03 21:32:40.234  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-03 21:32:40.310  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
+2022-04-03 21:32:40.476  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
+2022-04-03 21:32:40.491  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-03 21:32:40.939  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-03 21:32:40.945  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:32:41.172  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-03 21:32:41.447  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:32:41.466  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-03 21:32:41.473  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 2.785 seconds (JVM running for 3.504)
+2022-04-03 21:32:41.479  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-12345 URL para obtener productos: 
+2022-04-03 21:32:41.479  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-12345 Tipo: GET
+2022-04-03 21:32:41.480  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-12345 Timeout conexion (ms): 2
+2022-04-03 21:32:41.480  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-12345 Timeout ejecucion (ms): 5
+2022-04-03 21:32:41.520  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-12345 Servicio REST ejecutado
+2022-04-03 21:32:41.567  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-12345 Datos de Salida:
+ {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
+2022-04-03 21:32:41.568  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-12345 Tiempo invocacion: 94 milisegundos
+2022-04-03 21:34:43.978  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-03 21:34:43.979  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
+2022-04-03 21:34:43.980  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 1 ms
+2022-04-03 21:35:53.105  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
+2022-04-03 21:35:53.228  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:35:53.230  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
+2022-04-03 21:35:53.237  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
+2022-04-03 21:36:01.987  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 3908 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-03 21:36:01.989  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-03 21:36:02.502  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-03 21:36:02.542  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2022-04-03 21:36:02.908  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
+2022-04-03 21:36:02.916  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:36:02.917  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-03 21:36:02.917  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-03 21:36:02.997  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-03 21:36:02.998  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 976 ms
+2022-04-03 21:36:03.118  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-03 21:36:03.154  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-03 21:36:03.264  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-03 21:36:03.333  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
+2022-04-03 21:36:03.503  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
+2022-04-03 21:36:03.517  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-03 21:36:03.950  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-03 21:36:03.957  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:36:04.189  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-03 21:36:04.442  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:36:04.462  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-03 21:36:04.469  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 2.749 seconds (JVM running for 3.447)
+2022-04-03 21:36:04.474  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-12345 URL para obtener productos: 
+2022-04-03 21:36:04.474  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-12345 Tipo: GET
+2022-04-03 21:36:04.475  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-12345 Timeout conexion (ms): 2
+2022-04-03 21:36:04.475  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-12345 Timeout ejecucion (ms): 5
+2022-04-03 21:36:04.510  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-12345 Servicio REST ejecutado
+2022-04-03 21:36:04.557  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-12345 Datos de Salida:
+ {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
+2022-04-03 21:36:04.557  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-12345 Tiempo invocacion: 87 milisegundos
+2022-04-03 21:36:07.895  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-03 21:36:07.897  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
+2022-04-03 21:36:07.897  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 0 ms
+2022-04-03 21:37:15.626  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
+2022-04-03 21:37:15.751  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:37:15.753  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
+2022-04-03 21:37:15.760  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
+2022-04-03 21:37:21.609  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 18468 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-03 21:37:21.611  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-03 21:37:22.090  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-03 21:37:22.129  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2022-04-03 21:37:22.502  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
+2022-04-03 21:37:22.510  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:37:22.510  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-03 21:37:22.510  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-03 21:37:22.593  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-03 21:37:22.594  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 949 ms
+2022-04-03 21:37:22.721  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-03 21:37:22.759  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-03 21:37:22.880  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-03 21:37:22.948  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
+2022-04-03 21:37:23.106  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
+2022-04-03 21:37:23.119  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-03 21:37:23.524  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-03 21:37:23.531  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:37:23.748  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-03 21:37:24.015  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:37:24.032  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-03 21:37:24.038  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 2.712 seconds (JVM running for 3.418)
+2022-04-03 21:37:24.043  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-12345 URL para obtener productos: 
+2022-04-03 21:37:24.044  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-12345 Tipo: GET
+2022-04-03 21:37:24.044  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-12345 Timeout conexion (ms): 2
+2022-04-03 21:37:24.045  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-12345 Timeout ejecucion (ms): 5
+2022-04-03 21:37:24.078  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-12345 Servicio REST ejecutado
+2022-04-03 21:37:24.124  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-12345 Datos de Salida:
+ {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
+2022-04-03 21:37:24.125  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-12345 Tiempo invocacion: 84 milisegundos
+2022-04-03 21:37:27.407  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-03 21:37:27.408  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
+2022-04-03 21:37:27.410  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 2 ms
+2022-04-03 21:45:31.454  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
+2022-04-03 21:45:31.580  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:45:31.582  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
+2022-04-03 21:45:31.587  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.
+2022-04-03 21:45:38.489  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarting.55]-Starting WsInsertarApplication using Java 11.0.14.1 on LIM-BHN23D3 with PID 12348 (C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar\target\classes started by mccasani in C:\Users\mccasani\Documents\ambiente-desarrollo\ws\ws-insertar)
+2022-04-03 21:45:38.492  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStartupProfileInfo.640]-No active profile set, falling back to 1 default profile: "default"
+2022-04-03 21:45:38.988  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.132]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-03 21:45:39.029  -[INFO ]-[o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn.201]-Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2022-04-03 21:45:39.428  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@initialize.108]-Tomcat initialized with port(s): 8090 (http)
+2022-04-03 21:45:39.436  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:45:39.437  -[INFO ]-[o.a.catalina.core.StandardService@log.173]-Starting service [Tomcat]
+2022-04-03 21:45:39.437  -[INFO ]-[o.a.catalina.core.StandardEngine@log.173]-Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-03 21:45:39.522  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring embedded WebApplicationContext
+2022-04-03 21:45:39.522  -[INFO ]-[o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext.290]-Root WebApplicationContext: initialization completed in 997 ms
+2022-04-03 21:45:39.648  -[INFO ]-[o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation.31]-HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-03 21:45:39.683  -[INFO ]-[org.hibernate.Version@logVersion.44]-HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-03 21:45:39.795  -[INFO ]-[o.h.annotations.common.Version@<clinit>.56]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-03 21:45:39.864  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.110]-HikariPool-1 - Starting...
+2022-04-03 21:45:40.139  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@getConnection.123]-HikariPool-1 - Start completed.
+2022-04-03 21:45:40.152  -[INFO ]-[org.hibernate.dialect.Dialect@<init>.175]-HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-03 21:45:40.557  -[INFO ]-[o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService.52]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-03 21:45:40.564  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory.437]-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:45:40.767  -[WARN ]-[o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor.219]-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-03 21:45:41.095  -[INFO ]-[o.a.coyote.http11.Http11NioProtocol@log.173]-Starting ProtocolHandler ["http-nio-8090"]
+2022-04-03 21:45:41.121  -[INFO ]-[o.s.b.w.e.tomcat.TomcatWebServer@start.220]-Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-03 21:45:41.139  -[INFO ]-[pe.com.mau.app.WsInsertarApplication@logStarted.61]-Started WsInsertarApplication in 2.983 seconds (JVM running for 3.69)
+2022-04-03 21:45:41.148  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-12345 URL para obtener productos: 
+2022-04-03 21:45:41.149  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-12345 Tipo: GET
+2022-04-03 21:45:41.152  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-12345 Timeout conexion (ms): 2
+2022-04-03 21:45:41.152  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-12345 Timeout ejecucion (ms): 5
+2022-04-03 21:45:41.201  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-12345 Servicio REST ejecutado
+2022-04-03 21:45:41.257  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-12345 Datos de Salida:
+ {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
+2022-04-03 21:45:41.257  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-12345 Tiempo invocacion: 117 milisegundos
+2022-04-03 21:45:44.880  -[INFO ]-[o.a.c.c.C.[Tomcat].[localhost].[/]@log.173]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-03 21:45:44.881  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.525]-Initializing Servlet 'dispatcherServlet'
+2022-04-03 21:45:44.882  -[INFO ]-[o.s.web.servlet.DispatcherServlet@initServletBean.547]-Completed initialization in 1 ms
+2022-04-03 21:45:44.902  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.44]-123456789 URL para obtener productos: 
+2022-04-03 21:45:44.903  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.45]-123456789 Tipo: GET
+2022-04-03 21:45:44.903  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.55]-123456789 Timeout conexion (ms): 2
+2022-04-03 21:45:44.903  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.56]-123456789 Timeout ejecucion (ms): 5
+2022-04-03 21:45:44.912  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.63]-123456789 Servicio REST ejecutado
+2022-04-03 21:45:44.914  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.78]-123456789 Datos de Salida:
+ {"codRespuesta":"0","msgRespuesta":"OK","productos":[{"id":2,"nombre":"Cable usb","cantidad":10,"precio":15.0,"estado":"A","fecha":"2022-03-28T17:28:32.63435"},{"id":3,"nombre":"Laptop","cantidad":10,"precio":5000.0,"estado":"A","fecha":"2022-03-28T17:29:38.729301"},{"id":4,"nombre":"Monitor","cantidad":10,"precio":1000.0,"estado":"D","fecha":"2022-03-28T17:30:33.159414"}]}
+2022-04-03 21:45:44.914  -[INFO ]-[p.c.mau.app.client.ProductoClienImpl@obtener.79]-123456789 Tiempo invocacion: 12 milisegundos
+2022-04-03 21:49:55.301  -[INFO ]-[o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin@shutdown.159]-Application shutdown requested.
+2022-04-03 21:49:55.425  -[INFO ]-[o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy.651]-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-03 21:49:55.429  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.350]-HikariPool-1 - Shutdown initiated...
+2022-04-03 21:49:55.437  -[INFO ]-[com.zaxxer.hikari.HikariDataSource@close.352]-HikariPool-1 - Shutdown completed.

@@ -1,0 +1,70 @@
+package pe.com.mau.app.controller;
+
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import lombok.extern.log4j.Log4j2;
+import pe.com.mau.app.bean.reques.ProductoRequest;
+import pe.com.mau.app.bean.response.MensajeResponse;
+import pe.com.mau.app.bean.response.ProductResponse;
+import pe.com.mau.app.bean.response.ProductoResponse;
+import pe.com.mau.app.service.ProductoServiceInf;
+
+@RestController
+@RequestMapping("/api/productos")
+@Log4j2
+public class ProductoController {
+	@Autowired
+	private ProductoServiceInf productoService;
+
+	@GetMapping
+	public ProductoResponse consultar() {
+
+		return this.productoService.obtener();
+	}
+	@PostMapping("/insertar")
+	public ProductResponse insertar(@RequestBody @Validated ProductoRequest request,	BindingResult result) {
+		ProductResponse response=new ProductResponse();
+		MensajeResponse obMsg=new MensajeResponse();
+		request.setFecha(LocalDateTime.now());
+			if (result.hasErrors()) {
+				String er= result.getFieldErrors().get(0).getDefaultMessage();
+				obMsg.setCode(-1);
+				obMsg.setMessage(er);
+				response.setData(null);
+				response.setMensaje(obMsg);
+				log.info("Error: {}",response.toString());
+				return response;
+			}else {
+				response=this.productoService.insertar(request);
+				
+			}
+		log.info("Datos de entrada: {}",request.toString());
+		return this.productoService.insertar(request);
+	}
+	
+	
+	protected List<Map<String, String>> getErrrors(BindingResult result) {
+
+		List<Map<String, String>> errors = result.getFieldErrors().stream().map(err -> {
+			Map<String, String> error = new HashMap<>();
+			error.put(err.getField(), err.getDefaultMessage());
+			return error;
+		}
+		).collect(Collectors.toList());
+		return errors;
+	}
+}

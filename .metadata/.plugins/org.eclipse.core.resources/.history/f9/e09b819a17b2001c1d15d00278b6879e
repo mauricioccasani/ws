@@ -1,0 +1,5 @@
+package pe.com.mau.app.bean.response;
+
+public class GenericResponse {
+
+}

@@ -1,0 +1,12 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/sistema
+#spring.datasource.url=jdbc:postgresql://microservicio-postgres12:5432/db_account
+spring.datasource.username=postgres
+spring.datasource.password=123456
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL95Dialect
+spring.jpa.hibernate.ddl-auto=update
+logging.level.org.hibernate.sql=debug
+
+
+spring.application.name: ms-gestion-instructor
+spring.config.import: optional:configserver:http://localhost:8088

@@ -1,0 +1,22 @@
+package pe.com.mau.app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import pe.com.mau.app.bean.response.GenericResponse;
+import pe.com.mau.app.dao.ProductoDao;
+@Service
+public class ProductoServiceImpl  implements ProductoServiceInf{
+	@Autowired
+	private ProductoDao productoDao;
+
+	@Override
+	public GenericResponse obtener() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+
+}

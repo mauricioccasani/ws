@@ -1,0 +1,5 @@
+package pe.com.mau.app.bean.reques;
+
+public class ProductoRequest {
+
+}

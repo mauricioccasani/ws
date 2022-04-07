@@ -1,0 +1,27 @@
+package pe.com.mau.app;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import pe.com.mau.app.client.ProductoClienInf;
+
+@SpringBootApplication
+
+public class WsInsertarApplication implements CommandLineRunner{
+	@Autowired
+	private ProductoClienInf clienInf;
+	public static void main(String[] args) {
+		SpringApplication.run(WsInsertarApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		this.clienInf.obtener("12345");
+		
+	}
+
+
+
+}

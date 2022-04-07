@@ -1,0 +1,3 @@
+
+spring.application.name=ws-obtener
+spring.cloud.config.uri=configserver:http://localhost:8088

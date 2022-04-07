@@ -1,0 +1,9 @@
+package pe.com.mau.app.bean.response;
+
+import lombok.Data;
+
+@Data
+public class Mensaje {
+	private Integer code;
+	private Object  message;
+}

@@ -1,0 +1,48 @@
+package pe.com.mau.app.service;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import pe.com.mau.app.bean.ProductoEntity;
+import pe.com.mau.app.bean.response.GenericResponse;
+import pe.com.mau.app.bean.response.ProductoBean;
+import pe.com.mau.app.bean.response.ProductoResponse;
+import pe.com.mau.app.client.ProductoClienInf;
+import pe.com.mau.app.dao.ProductoDao;
+import pe.com.mau.app.util.Constante;
+@Service
+public class ProductoServiceImpl  implements ProductoServiceInf{
+	@Autowired
+	private ProductoDao productoDao;
+	@Autowired
+	private ProductoClienInf productoClien;
+
+	@Override
+	public GenericResponse obtener(ProductoEntity request) { 
+		GenericResponse response=new GenericResponse();
+		ProductoResponse productoResponse= this.productoClien.obtener("123456789");
+		if (null!=productoResponse && Constante.MSG_EXITO.equals(productoResponse.getMsgRespuesta())
+				&&!productoResponse.getProductos().isEmpty()) {
+			for (ProductoBean productos : productoResponse.getProductos()) {
+				request.setId(productos.getId());
+				request.setNombre(productos.getNombre());
+				request.setCantidad(productos.getCantidad());
+				request.setPrecio(productos.getPrecio());
+				request.setEstado(productos.getEstado());
+				request.setFecha(LocalDateTime.parse(productos.getFecha()));
+			}
+		}
+		
+		this.productoDao.save(request);
+		response.setCodRespuesta(Constante.COD_EXITO);
+		response.setMsgRespuesta(Constante.COD_EXITO);
+		return response;
+	}
+
+	
+
+
+}

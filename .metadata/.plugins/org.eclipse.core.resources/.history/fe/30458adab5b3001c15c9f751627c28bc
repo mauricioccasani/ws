@@ -1,0 +1,6 @@
+package pe.com.mau.app.dao;
+
+
+public interface ProductoDao {
+
+}

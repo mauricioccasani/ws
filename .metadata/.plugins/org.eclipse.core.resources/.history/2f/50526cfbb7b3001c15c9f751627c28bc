@@ -1,0 +1,8 @@
+package pe.com.mau.app.service;
+
+import pe.com.mau.app.bean.request.ProductoRequest;
+import pe.com.mau.app.bean.response.GenericResponse;
+
+public interface ProductoServiceInf {
+	public GenericResponse obtener(ProductoRequest request);
+}

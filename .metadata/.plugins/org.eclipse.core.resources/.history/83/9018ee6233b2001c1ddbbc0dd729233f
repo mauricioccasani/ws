@@ -1,0 +1,17 @@
+package pe.com.mau.app.bean.response;
+
+import java.time.LocalDateTime;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Data;
+@Data
+public class ProductoBean {
+	private int id;
+	private String nombre;
+	private int cantidad;
+	private double precio;
+	private String estado;
+	@JsonProperty("fecha")
+	private LocalDateTime fecha;
+}

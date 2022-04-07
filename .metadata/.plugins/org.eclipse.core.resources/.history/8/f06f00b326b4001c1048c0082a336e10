@@ -1,0 +1,14 @@
+package pe.com.mau.app.util;
+
+class Constantes {
+
+
+
+	static final String COD_ERROR = "1";
+	static final String MSG_ERROR = "lista vacia";
+	static final String COD_EXITO = "0";
+	static final String MSG_EXITO = "OK";
+
+	static final String FORMATOFECHACABECERA = "yyyy-MM-dd'T'HH:mm:ss'Z'";
+
+}

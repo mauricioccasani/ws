@@ -1,0 +1,18 @@
+package pe.com.mau.app;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import pe.com.mau.app.client.ProductoClienInf;
+
+@SpringBootTest
+class WsInsertarApplicationTests {
+	@Autowired
+	private ProductoClienInf  productoClien;
+	@Test
+	void contextLoads() {
+		this.productoClien.obtener("1234567");
+	}
+
+}

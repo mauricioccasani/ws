@@ -1,0 +1,7 @@
+package pe.com.mau.app.service;
+
+import pe.com.mau.app.bean.response.ProductoEntityResponse;
+
+public interface ProductoServiceInf {
+	public ProductoEntityResponse obtener();
+}
