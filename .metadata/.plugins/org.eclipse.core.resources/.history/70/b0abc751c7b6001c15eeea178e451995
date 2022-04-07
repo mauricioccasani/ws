@@ -10,7 +10,7 @@ spring.application.name=ws-config-server
 
 #Cloud
 spring.cloud.config.server.git.uri=https://github.com/mauricioccasani/ws.git
-spring.cloud.config.server.git.searchPaths=ws-gestion-config-data
+spring.cloud.config.server.git.searchPaths: ms-gestion-config-data
 spring.cloud.config.server.git.username: ${USER_NAME}
 spring.cloud.config.server.git.password: ${USER_PASSWORD}
 spring.cloud.config.server.git.cloneOnStart: true
