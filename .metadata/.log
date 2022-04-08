@@ -8084,3 +8084,75 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 1284 not found.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 17:43:41.536
 !MESSAGE executing callback sts4.classpath.zaQfnJFS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:00.493
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zaQfnJFS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:00.494
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.zaQfnJFS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:00.495
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:00.496
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zaQfnJFS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:10.009
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:10.010
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@523a567f[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:10.011
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.336
+!MESSAGE Boot LS startup time from start to initialized: 2324ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.402
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.pFTCzXyOisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.403
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.404
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.405
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.406
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.407
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.pFTCzXyO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.414
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.419
+!MESSAGE buffering callback sts4.classpath.pFTCzXyO ws-obtener false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.420
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.426
+!MESSAGE classpath=95 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.431
+!MESSAGE buffering callback sts4.classpath.pFTCzXyO ws-config-server false 95
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.432
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.438
+!MESSAGE classpath=122 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.442
+!MESSAGE buffering callback sts4.classpath.pFTCzXyO ws-insertar false 122
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.443
+!MESSAGE executing callback sts4.classpath.pFTCzXyO 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-07 18:58:12.772
+!MESSAGE executing callback sts4.classpath.pFTCzXyO SUCCESS [done]
